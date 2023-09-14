@@ -109,8 +109,10 @@ enum Choice {
 /// Winner may be 'None' in cases where everyone is killing everyone.
 /// Game rules:
 /// - Rock beats scissors.
-/// - Scissors beats paper.
 /// - Paper beats rock.
+/// - Scissors beats paper.
+///
+/// In simple line, R < P < S < R
 /// Score rules:
 /// - Tie: when players (all) select same option, score remains unchanged.
 ///         Suppose 2 of 3 players select Rock, Rock, Scissor.
@@ -228,12 +230,12 @@ mod tests {
 
     #[test]
     fn test_commit_blake3_256() {
-        let hash = commit_faster("rock", "abhi");
-        // println!("{}", hash.to_string());
+        let hash = commit_faster("Rock", "abhi");
+        println!("{}", hash.to_string());
         // dbg!(hash);
         assert_eq!(
             hash,
-            hex!("e59fb98489b367c5b248195c62f176deffeb3da71fbec56d0c42fd88acbe3b2b")
+            hex!("4dfc91d264de6fa73305a7f9318cf1843575446ba36833df3177536d04d99ea7")
         );
     }
 

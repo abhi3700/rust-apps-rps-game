@@ -1,17 +1,43 @@
 {
-  "Alice": {
-    "choice": "Rock",
-    "salt": "alice",
-    "commit_hash": "631acfdde6e0ab0572f4dbf43d24a276f789bb35fe16a354f45e2e06966015c3"
-  },
-  "Bob": {
-    "choice": "Paper",
-    "salt": "bob",
-    "commit_hash": "559e2a3e603e1db574a8ba3af64e6ecd622eb910b04f45a3881bf32ed5e4792a"
-  },
-  "Carol": {
-    "choice": "Scissors",
-    "salt": "carol",
-    "commit_hash": "32ca7aba942e2b65fae9422a68686f401df7fa2897ffa360fcf077d882b9c074"
-  }
+  "Rounds": [
+    // 1
+    // R,P,S
+    {
+      "Alice": {
+        "choice": "Rock",
+        "salt": "alice",
+        "commit_hash": "631acfdde6e0ab0572f4dbf43d24a276f789bb35fe16a354f45e2e06966015c3"
+      },
+      "Bob": {
+        "choice": "Paper",
+        "salt": "bob",
+        "commit_hash": "559e2a3e603e1db574a8ba3af64e6ecd622eb910b04f45a3881bf32ed5e4792a"
+      },
+      "Carol": {
+        "choice": "Scissors",
+        "salt": "carol",
+        "commit_hash": "32ca7aba942e2b65fae9422a68686f401df7fa2897ffa360fcf077d882b9c074"
+      }
+    },
+
+    // 2
+    // 2R,1S
+    {
+      "Alice": {
+        "choice": "Rock",
+        "salt": "alice2",
+        "commit_hash": "5ebfaeb1a096e410061fc0b7beb1313dd149317a4006605a194f18759e21ce3d"
+      },
+      "Bob": {
+        "choice": "Rock",
+        "salt": "bob2",
+        "commit_hash": "90c5d988e7bbdb5ea23d563ef4b86acfd4b2962d25754ae3e3366831095da2a1"
+      },
+      "Carol": {
+        "choice": "Scissors",
+        "salt": "carol2",
+        "commit_hash": "ae351558bffdf963a9fae636f3382af87c4b41467445273221c0315b74e60663"
+      }
+    }
+  ]
 }
